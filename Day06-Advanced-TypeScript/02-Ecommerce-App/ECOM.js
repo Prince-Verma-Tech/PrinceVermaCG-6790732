@@ -6,7 +6,7 @@ var mobiles = [
     },
     {
         name: "Samsung Galaxy",
-        image: "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=400",
+        image: "https://images.samsung.com/is/image/samsung/p6pim/in/sm-s731bdbcins/gallery/in-galaxy-s25-fe-sm-s731-sm-s731bdbcins-thumb-548902985",
         price: 70000
     },
     {
