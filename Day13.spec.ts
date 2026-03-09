@@ -20,15 +20,21 @@ import test from "@playwright/test"
     //getbyTestId
     //getbyRole
 
-test("getbyElements", async ({page})=>{
-    await page.goto("https://practicetestautomation.com/practice-test-login/")
-    // await page.getByLabel("Username",{exact:true}).fill("student")
-    // await page.getByLabel("Password").fill("Password123")
-    // await page.getByText("Submit").first().click()
+// test("getbyElements", async ({page})=>{
+//     await page.goto("https://practicetestautomation.com/practice-test-login/")
+//     // await page.getByLabel("Username",{exact:true}).fill("student")
+//     // await page.getByLabel("Password").fill("Password123")
+//     // await page.getByText("Submit").first().click()
 
 
-    //getByRole
-    await page.getByRole("textbox",{name:"Username",exact:true}).fill("student")
-    await page.getByRole("textbox",{name:"Password",exact:true}).fill("Password123")
-    await page.getByRole("button",{name:"Submit",exact:true}).click()   
+//     //getByRole
+//     await page.getByRole("textbox",{name:"Username",exact:true}).fill("student")
+//     await page.getByRole("textbox",{name:"Password",exact:true}).fill("Password123")
+//     await page.getByRole("button",{name:"Submit",exact:true}).click()   
+// })
+
+test("getbyTestId", async ({page})=>{
+    await page.goto("https://www.saucedemo.com/")
+    await page.getByTestId("username").fill("student")
+
 })
